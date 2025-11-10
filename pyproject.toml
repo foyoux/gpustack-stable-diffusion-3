@@ -1,0 +1,25 @@
+[project]
+name = "test005"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.11.0",
+    "diffusers>=0.35.2",
+    "fastapi>=0.121.1",
+    "ftfy>=6.3.1",
+    "protobuf>=6.33.0",
+    "sentencepiece>=0.2.1",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=4.57.1",
+    "uvicorn>=0.38.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.11.0",
+    "isort>=7.0.0",
+    "ruff>=0.14.4",
+]

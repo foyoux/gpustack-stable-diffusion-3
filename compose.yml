@@ -1,0 +1,12 @@
+services:
+  server:
+    build: .
+    image: foyou/gpustack-stable-diffusion3:0.1.0
+    ports:
+      - "8080:8080"
+    environment:
+      HF_HUB_CACHE: /server/huggingface/hub
+      HF_HUB_OFFLINE: 1
+    volumes:
+      - /home/wangxm/.cache/huggingface:/server/huggingface
+    command: [ "python", "async_server.py", "--port", "8080", "--model_path", "/server/huggingface/hub/models--stabilityai--stable-diffusion-3.5-medium/snapshots/b940f670f0eda2d07fbb75229e779da1ad11eb80" ]
