@@ -14,7 +14,7 @@ WORKDIR /server
 COPY pyproject.toml uv.lock ./
 
 RUN <<EOF
-uv sync --no-dev
+uv sync --no-dev --no-cache
 uv pip list
 uv cache clean
 EOF
