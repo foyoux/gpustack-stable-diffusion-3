@@ -18,3 +18,5 @@ python async_server.py --port {{port}} --model_path {{model_name}}
 ```
 
 <img width="885" height="1577" alt="image" src="https://github.com/user-attachments/assets/e038f0c3-3519-4faa-936a-6bdcb7d25f4d" />
+
+> 注意：stable-diffusion-3-medium -> https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers
